@@ -4,3 +4,87 @@ body, html {
     display: grid;
     place-items: center; /* Both horizontal and vertical centering */
   }
+
+  .navbar{
+    width: 100%;
+    background-color: rgb(96, 190, 200);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    list-style: none;
+    
+  } 
+
+  nav ul li{
+    height: 50px;
+  }
+
+  nav a{
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+  }
+  nav a:hover{
+    background-color: rgb(158, 243, 233);
+  }
+
+
+
+  nav li:first-child{
+    margin-right: auto;
+  }
+
+
+  .sidebar{
+    position: fixed;
+    background-color: rgba(246, 240, 240, 0.1);
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    
+  
+
+  }
+  .sidebar ul{
+    list-style: none;
+  }
+
+  .menubtn{
+    display: none;
+  }
+  .sidebar{
+    display: none;
+  }
+  
+  @media(max-width: 800px){
+    .hideonMobile{
+
+      display: none;
+
+    }
+    .menubtn{
+      display: block;
+    }
+    .sidebar{
+      display: block;
+    }
+  }
+
+  @media(max-width: 400px){
+    .sidebar{
+
+      width: 100%;
+
+    }
+    .weblogo{
+      display: none;
+    }
+  }

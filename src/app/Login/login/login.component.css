@@ -70,8 +70,10 @@ html,body{
   left: 0;
   z-index: 0;
   border-radius: 15px;
-  background: -webkit-linear-gradient(left,#003366,#004080,#0059b3
-, #0073e6);
+  /* background: -webkit-linear-gradient(left,#003366,#004080,#0059b3
+, #0073e6); */
+  background: -webkit-linear-gradient(left,#039000,#18af1a,#0ecd04
+  , #71ff51);
   transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
 }
 input[type="radio"]{
@@ -162,8 +164,10 @@ form .btn .btn-layer{
   width: 300%;
   position: absolute;
   left: -100%;
-  background: -webkit-linear-gradient(right,#003366,#004080,#0059b3
-, #0073e6);
+  /* background: -webkit-linear-gradient(right,#003366,#004080,#0059b3
+, #0073e6); */
+background: -webkit-linear-gradient(left,#1a3e1a,#136014,#0d9706
+, #47d228);
   border-radius: 15px;
   transition: all 0.4s ease;;
 }

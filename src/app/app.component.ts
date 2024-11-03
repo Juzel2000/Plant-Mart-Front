@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +11,21 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'PlantMart-Front';
+
+
+
+  @ViewChild('sidebar') sidebar!: ElementRef;
+
+  hideSidebar() {
+    // if (this.sidebar) {
+    //   this.sidebar.nativeElement.style.display = 'none';
+    // }
+    const element = <HTMLElement> document.getElementsByClassName('sidebar')[0];
+    element.style.display = 'none';
+
+  }
+
+
+
+
 }
